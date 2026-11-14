@@ -107,7 +107,8 @@ An-lise-Sentimento-Coment-rios-Redes-Sociais/
 ├── .gitignore
 │
 ├── notebook/
-│   └── analise_sentimento_redes_sociais.ipynb   # pipeline completo (19 células)
+│   ├── analise_sentimento_redes_sociais.ipynb   # pipeline completo (19 células, Databricks)
+│   └── analise_sentimento_kaggle.ipynb          # mesma análise, adaptada ao Kaggle (SparkSession + display incluídos)
 │
 └── images/
     ├── p1_plataforma_negativo.png    # % negativo por plataforma
@@ -141,6 +142,8 @@ pip install -r requirements.txt
 ```
 
 > O notebook foi desenvolvido e executado no **Databricks serverless** (Spark + pandas + scikit-learn). O dataset é descarregado em runtime via API do Hugging Face.
+
+**No Kaggle?** Importa diretamente do GitHub: New Notebook → File → Import Notebook → separador **GitHub** → cola o URL deste repositório e escolhe `notebook/analise_sentimento_kaggle.ipynb`. Ativa **Internet ON** nos Settings (para descarregar o dataset) e corre **Save & Run All**.
 
 ---
 
