@@ -110,6 +110,9 @@ An-lise-Sentimento-Coment-rios-Redes-Sociais/
 │   ├── analise_sentimento_redes_sociais.ipynb   # pipeline completo (19 células, Databricks)
 │   └── analise_sentimento_kaggle.ipynb          # mesma análise, adaptada ao Kaggle (SparkSession + display incluídos)
 │
+├── data/
+│   └── posts_redes_sociais_sentimento.csv    # dataset limpo (732 linhas × 14 colunas) — análise offline e upload no Kaggle
+│
 └── images/
     ├── p1_plataforma_negativo.png    # % negativo por plataforma
     ├── p2_horarios_negativo.png      # % negativo por hora do dia
@@ -125,6 +128,7 @@ O notebook está organizado em **STEPs numerados** (1–8, do carregamento à av
 - **Fonte:** [chuuhtetnaing/myanmar-social-media-sentiment-analysis-dataset](https://huggingface.co/datasets/chuuhtetnaing/myanmar-social-media-sentiment-analysis-dataset) (Hugging Face, público, sem credenciais)
 - **Conteúdo:** 732 posts de Twitter, Instagram e Facebook, com texto, rótulo de emoção, plataforma, timestamp, hashtags, país, likes e retweets
 - **Após preparação:** 706 linhas únicas (26 duplicados removidos), 3 classes — Positivo 459 · Negativo 161 · Neutro 86
+- **Cópia local:** `data/posts_redes_sociais_sentimento.csv` — permite analisar sem internet e publicar como Kaggle Dataset
 
 ---
 
@@ -143,7 +147,7 @@ pip install -r requirements.txt
 
 > O notebook foi desenvolvido e executado no **Databricks serverless** (Spark + pandas + scikit-learn). O dataset é descarregado em runtime via API do Hugging Face.
 
-**No Kaggle?** Importa diretamente do GitHub: New Notebook → File → Import Notebook → separador **GitHub** → cola o URL deste repositório e escolhe `notebook/analise_sentimento_kaggle.ipynb`. Ativa **Internet ON** nos Settings (para descarregar o dataset) e corre **Save & Run All**.
+**No Kaggle?** Importa diretamente do GitHub: New Notebook → File → Import Notebook → separador **GitHub** → cola o URL deste repositório e escolhe `notebook/analise_sentimento_kaggle.ipynb`. O STEP 1 é inteligente: se anexares o CSV como Dataset (Add Input), lê de lá — mesmo sem Internet; caso contrário, descarrega do Hugging Face. No fim, **Save & Run All**.
 
 ---
 
