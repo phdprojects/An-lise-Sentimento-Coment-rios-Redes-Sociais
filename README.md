@@ -107,7 +107,7 @@ An-lise-Sentimento-Coment-rios-Redes-Sociais/
 ├── .gitignore
 │
 ├── notebook/
-│   └── analise_sentimento_redes_sociais.ipynb   # pipeline completo (18 células)
+│   └── analise_sentimento_redes_sociais.ipynb   # pipeline completo (19 células)
 │
 └── images/
     ├── p1_plataforma_negativo.png    # % negativo por plataforma
@@ -115,7 +115,7 @@ An-lise-Sentimento-Coment-rios-Redes-Sociais/
     └── p7_top_hashtags.png           # top 15 hashtags por volume
 ```
 
-O notebook está organizado em **STEPs numerados** (1–8, do carregamento à avaliação), seguidos das células **P1–P7** (perguntas de negócio) e uma célula de **Conclusões** — cada célula começa com um cabeçalho: objetivo, input, output e operações.
+O notebook está organizado em **STEPs numerados** (1–8, do carregamento à avaliação), seguido de uma célula de **inspeção** (primeiras 51 linhas de cada dataset, para perceber a estrutura), das células **P1–P7** (perguntas de negócio) e uma célula de **Conclusões** — cada célula começa com um cabeçalho: objetivo, input, output e operações.
 
 ---
 
