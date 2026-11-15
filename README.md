@@ -147,7 +147,12 @@ pip install -r requirements.txt
 
 > O notebook foi desenvolvido e executado no **Databricks serverless** (Spark + pandas + scikit-learn). O dataset é descarregado em runtime via API do Hugging Face.
 
-**No Kaggle?** Importa diretamente do GitHub: New Notebook → File → Import Notebook → separador **GitHub** → cola o URL deste repositório e escolhe `notebook/analise_sentimento_kaggle.ipynb`. O STEP 1 é inteligente: se anexares o CSV como Dataset (Add Input), lê de lá — mesmo sem Internet; caso contrário, descarrega do Hugging Face. No fim, **Save & Run All**.
+**No Kaggle?** O projeto está publicado — vê o notebook corrido e o dataset público:
+
+* 📓 **Notebook:** [Análise de Sentimento — Redes Sociais](https://www.kaggle.com/code/gonaldomichael/an-lise-de-sentimento-redes-sociais) — pipeline completo executado, com outputs e gráficos
+* 🗃️ **Dataset:** [Análise de Sentimento — Comentários Redes Sociais](https://www.kaggle.com/datasets/gonaldomichael/anlise-de-sentimento-comentrios-redes-sociais) — 732 posts, navegável e pronto a analisar
+
+**Queres reproducir no Kaggle?** Importa do GitHub: New Notebook → File → Import Notebook → separador **GitHub** → cola o URL deste repositório e escolhe `notebook/analise_sentimento_kaggle.ipynb`. O STEP 1 é inteligente: se anexares o CSV como Dataset (Add Input), lê de lá — mesmo sem Internet; caso contrário, descarrega do Hugging Face. No fim, **Save & Run All**.
 
 ---
 
